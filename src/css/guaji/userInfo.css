@@ -1,0 +1,29 @@
+/* ------- default ------- */
+/* #region  */
+.main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.player-info {
+    position: relative;
+    width: 20vw;
+
+    padding: 2vh 1vh;
+
+    color: aliceblue;
+    background-color: rgb(41, 41, 41);
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* #endregion */
+/* ------- end  ------- */

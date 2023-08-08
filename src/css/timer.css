@@ -1,0 +1,35 @@
+.timer-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(83, 161, 230);
+}
+
+.time,
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13vh;
+}
+
+.date {
+    font-size: 5vh
+}
+
+.twinkle {
+    animation: Twinkle 1s infinite alternate-reverse;
+}
+
+@keyframes Twinkle {
+    from {
+        color: rgba(83, 161, 230, 0.3);
+    }
+
+    to {
+        color: rgb(83, 161, 230);
+    }
+}
