@@ -1341,7 +1341,7 @@
                 div.innerHTML =
                     `
                         <div class="sg-option-ToDoList-item-exe">Exe 5</div>
-                        <div class="sg-option-ToDoList-item-text">${index},${text}</div>
+                        <div class="sg-option-ToDoList-item-text">${text}</div>
                         <div class="sg-option-ToDoList-item-operate">
                             <img src="../assets/Common/yes.png" alt="">
                         </div>
@@ -13545,6 +13545,7 @@
 
             // 获取 单个 随记单词
             randomWord(range, step) {
+                console.log(range, step);
                 return this.word[parseInt(Math.random() * range + step)];
             },
 
@@ -13557,7 +13558,7 @@
                 let rand1 = this.randomWord(step, 0);
                 let rand2 = this.randomWord(step * 3 > len ? Math.abs(step * 2 - len) : step * 2, step);
                 let rand3 = this.randomWord(step * 4 > len ? Math.abs(step * 3 - len) : step * 3, step * 2);
-                let rand4 = this.randomWord(step * 5 > len ? Math.abs(step * 4 - len) : step * 4, step * 3);
+                let rand4 = this.randomWord(step * 3, step * 5 > len ? Math.abs(step * 4 - len) : step * 4);
 
                 typeof rand3 === "undefined" ? rand3 = this.randomWord(step * 4 > len ? Math.abs(step * 3 - len) : step * 3, step * 2) : rand3;
                 typeof rand3 === "undefined" ? rand3 = this.randomWord(step * 4 > len ? Math.abs(step * 3 - len) : step * 3, step * 2) : rand3;
